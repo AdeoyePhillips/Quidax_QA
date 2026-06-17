@@ -37,7 +37,7 @@ The tests are organized into the following modules:
 
 1. Some tests in the Single Input Field module are failing, particularly those involving angle brackets and XSS attempts.
 2. The Multiple Input Field module has issues with decimal inputs, empty fields, and non-numeric inputs.
-3. The Multi Select List Demo has problems with deselection and displaying all selected options.
+3. The Multi-Select List Demo has problems with deselection and displaying all selected options.
 
 ### Blockers
 
@@ -45,7 +45,7 @@ The tests are organized into the following modules:
 2. XSS protection may be inadequate in the Single Input Field.
 3. Calculation errors occur with decimal inputs in the Multiple Input Field.
 4. Error handling for empty or invalid inputs is insufficient in the Multiple Input Field.
-5. The Multi Select List Demo has issues with option deselection and displaying all selected options.
+5. The Multi-Select List Demo has issues with option deselection and displaying all selected options.
 
 ### Recommendations
 
@@ -53,5 +53,5 @@ The tests are organized into the following modules:
 2. Improve XSS protection in the Single Input Field.
 3. Fix calculation logic for decimal inputs in the Multiple Input Field.
 4. Implement proper error handling for empty and invalid inputs.
-5. Improve the Multi Select List Demo to handle deselection correctly and display all selected options.
+5. Improve the Multi-Select List Demo to handle deselection correctly and display all selected options.
 6. Consider adding labels, error messages, and user-friendly placeholders as suggested in the recommendations document.
