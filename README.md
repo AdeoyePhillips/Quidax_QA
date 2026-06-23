@@ -1,57 +1,143 @@
-# Quidax Assessment Cypress Tests
-This repository contains Cypress tests for the Quidax assessment project.
+# Project Zone E-Commerce Automation Framework
 
-## Prerequisites
-- Node.js (latest LTS version recommended)
-- npm (comes with Node.js)
-- Google Chrome browser
-- Git
+## Overview
 
-## Installation
-1. Clone this repository:
-https://github.com/Adeoye-Phillip/Quidax_Assessment
-2. Navigate to the project directory: cd Quidax_Assessment
-3. Install dependencies: npm install
+This project is an end-to-end automated testing framework developed using Cypress and the Page Object Model (POM) design pattern.
 
-## Running the Tests
-To run the Cypress tests:
+The automation validates a complete customer purchase journey, from product selection through checkout and order confirmation. The framework demonstrates real-world test automation practices commonly used in modern e-commerce applications.
 
-1. Open Cypress Test Runner: npx cypress open
-2. In the Cypress Test Runner, click on the test file you want to run (e.g., `quidax.cy.js`).
-Alternatively, to run tests headlessly: npx cypress run
+---
 
-## Test Structure
-The tests are organized into the following modules:
+## Tech Stack
 
-- Single Input Field
-- Multiple Input Field
-- Select List Demo
-- Multi Select List Demo
-- Bootstrap Alert Messages
-- Bootstrap Single Modals
-- Bootstrap Multiple Modals
+* Cypress
+* JavaScript
+* Node.js
+* Page Object Model (POM)
+* Fixture-Based Test Data Management
 
-## Notes
+---
 
-### Observations
+## Framework Architecture
 
-1. Some tests in the Single Input Field module are failing, particularly those involving angle brackets and XSS attempts.
-2. The Multiple Input Field module has issues with decimal inputs, empty fields, and non-numeric inputs.
-3. The Multi-Select List Demo has problems with deselection and displaying all selected options.
+The framework follows the Page Object Model (POM) approach, separating business logic from page interactions.
 
-### Blockers
+### Page Objects
 
-1. The system doesn't handle angle brackets correctly in the Single Input Field.
-2. XSS protection may be inadequate in the Single Input Field.
-3. Calculation errors occur with decimal inputs in the Multiple Input Field.
-4. Error handling for empty or invalid inputs is insufficient in the Multiple Input Field.
-5. The Multi-Select List Demo has issues with option deselection and displaying all selected options.
+* Home Page
+* Product Page
+* Checkout Page
+* Order Page
 
-### Recommendations
+### Test Data Management
 
-1. Implement proper input sanitization for the Single Input Field.
-2. Improve XSS protection in the Single Input Field.
-3. Fix calculation logic for decimal inputs in the Multiple Input Field.
-4. Implement proper error handling for empty and invalid inputs.
-5. Improve the Multi-Select List Demo to handle deselection correctly and display all selected options.
-6. Consider adding labels, error messages, and user-friendly placeholders as suggested in the recommendations document.
+Test data is maintained within fixture files, allowing:
+
+* Data-driven testing
+* Easier maintenance
+* Better test scalability
+* Cleaner test implementation
+
+---
+
+## Business Flow Covered
+
+### End-to-End Product Purchase
+
+The automated scenario validates the following workflow:
+
+#### Product Discovery
+
+* Navigate to the application
+* Access product categories
+* Select MP3 Players category
+
+#### Product Selection
+
+* Locate desired product
+* Add product to cart
+* Proceed to checkout
+
+#### Customer Registration
+
+* Create a new customer account
+* Populate personal information
+* Populate address information
+* Configure account preferences
+
+#### Checkout Validation
+
+* Accept Privacy Policy
+* Accept Terms and Conditions
+* Complete checkout process
+
+#### Order Verification
+
+* Verify selected product details
+* Confirm order placement
+* Validate successful order confirmation message
+
+---
+
+## Automation Features
+
+### Data-Driven Testing
+
+* Externalized test data using fixtures
+* Dynamic data population
+* Improved maintainability
+
+### Assertion Strategy
+
+* Product verification
+* Order confirmation validation
+* User action verification
+* Checkout completion validation
+
+### Reusability
+
+* Shared page components
+* Reusable methods
+* Modular framework structure
+
+---
+
+## Quality Engineering Practices Applied
+
+* End-to-End Testing
+* Functional Testing
+* Regression Testing
+* Data-Driven Testing
+* Page Object Model
+* Test Data Management
+* Assertion-Based Validation
+* Maintainable Framework Design
+
+---
+
+## Skills Demonstrated
+
+* Cypress Automation
+* JavaScript
+* E-Commerce Testing
+* UI Automation
+* Test Framework Design
+* QA Engineering
+* Functional Testing
+* End-to-End Workflow Validation
+
+---
+
+## Business Value
+
+This automation suite validates a critical revenue-generating workflow within an e-commerce application. By automating the customer purchasing journey, the framework helps reduce regression risks, improve release confidence, and ensure a seamless user experience.
+
+---
+
+## Author
+
+Adeoye Phillip
+
+QA Automation Engineer
+
+This project demonstrates my ability to automate complex business workflows, implement scalable automation frameworks, and apply industry-standard quality engineering practices.
