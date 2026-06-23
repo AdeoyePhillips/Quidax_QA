@@ -1,10 +1,10 @@
-# Project Zone E-Commerce Automation Framework
+# Quidax QA Automation Assessment
 
 ## Overview
 
-This project is an end-to-end automated testing framework developed using Cypress and the Page Object Model (POM) design pattern.
+This project contains an automated test suite developed using Cypress and the Page Object Model (POM) design pattern. The objective of the project was to validate key user interactions and functionalities across multiple web components, including forms, dropdowns, alerts, and modal dialogs.
 
-The automation validates a complete customer purchase journey, from product selection through checkout and order confirmation. The framework demonstrates real-world test automation practices commonly used in modern e-commerce applications.
+The framework was designed with maintainability, scalability, and readability in mind, allowing test logic and page interactions to remain cleanly separated.
 
 ---
 
@@ -12,125 +12,108 @@ The automation validates a complete customer purchase journey, from product sele
 
 * Cypress
 * JavaScript
-* Node.js
 * Page Object Model (POM)
-* Fixture-Based Test Data Management
+* Node.js
 
 ---
 
-## Framework Architecture
+## Framework Design
 
-The framework follows the Page Object Model (POM) approach, separating business logic from page interactions.
+The automation framework follows the Page Object Model (POM) architecture, where page-specific locators and actions are abstracted into dedicated page classes.
 
-### Page Objects
+### Benefits
 
-* Home Page
-* Product Page
-* Checkout Page
-* Order Page
-
-### Test Data Management
-
-Test data is maintained within fixture files, allowing:
-
-* Data-driven testing
-* Easier maintenance
-* Better test scalability
-* Cleaner test implementation
-
----
-
-## Business Flow Covered
-
-### End-to-End Product Purchase
-
-The automated scenario validates the following workflow:
-
-#### Product Discovery
-
-* Navigate to the application
-* Access product categories
-* Select MP3 Players category
-
-#### Product Selection
-
-* Locate desired product
-* Add product to cart
-* Proceed to checkout
-
-#### Customer Registration
-
-* Create a new customer account
-* Populate personal information
-* Populate address information
-* Configure account preferences
-
-#### Checkout Validation
-
-* Accept Privacy Policy
-* Accept Terms and Conditions
-* Complete checkout process
-
-#### Order Verification
-
-* Verify selected product details
-* Confirm order placement
-* Validate successful order confirmation message
-
----
-
-## Automation Features
-
-### Data-Driven Testing
-
-* Externalized test data using fixtures
-* Dynamic data population
 * Improved maintainability
+* Reusable page components
+* Reduced code duplication
+* Easier test scalability
+* Better readability and organization
 
-### Assertion Strategy
+---
 
-* Product verification
-* Order confirmation validation
-* User action verification
-* Checkout completion validation
+## Test Coverage
 
-### Reusability
+### Simple Form Demo
 
-* Shared page components
-* Reusable methods
-* Modular framework structure
+#### Verify Single Input Message Display
+
+* Navigate to the Simple Form Demo page
+* Enter a message
+* Click "Show Message"
+* Verify the exact message entered is displayed
+
+#### Verify Total Calculation
+
+* Enter two positive integers
+* Click "Get Total"
+* Verify the displayed result matches the expected sum
+
+---
+
+### Select Dropdown List
+
+#### Verify Default State
+
+* Confirm dropdown defaults to "Please Select"
+* Verify no day is selected initially
+
+#### Verify Multiple Selection
+
+* Select multiple states
+* Verify selected values are successfully chosen within the list
+
+---
+
+### Bootstrap Alerts
+
+#### Verify Success Alert Display
+
+* Trigger a success alert
+* Verify alert visibility
+* Validate expected success message content
+
+---
+
+### Bootstrap Modals
+
+#### Verify Single Modal Close Functionality
+
+* Open modal
+* Verify modal visibility
+* Close modal
+* Verify modal is dismissed
+
+#### Verify Multiple Modal Workflow
+
+* Launch first modal
+* Launch nested modal
+* Save changes
+* Verify both modals close successfully
 
 ---
 
 ## Quality Engineering Practices Applied
 
-* End-to-End Testing
+* Page Object Model implementation
+* Explicit assertions
+* Reusable page methods
+* Structured test organization
+* Clean test naming conventions
+* Independent test execution
+* Maintainable framework architecture
+
+---
+
+## Key Skills Demonstrated
+
+* UI Test Automation
 * Functional Testing
 * Regression Testing
-* Data-Driven Testing
-* Page Object Model
-* Test Data Management
-* Assertion-Based Validation
-* Maintainable Framework Design
-
----
-
-## Skills Demonstrated
-
+* Test Design
+* Automation Framework Development
 * Cypress Automation
 * JavaScript
-* E-Commerce Testing
-* UI Automation
-* Test Framework Design
-* QA Engineering
-* Functional Testing
-* End-to-End Workflow Validation
-
----
-
-## Business Value
-
-This automation suite validates a critical revenue-generating workflow within an e-commerce application. By automating the customer purchasing journey, the framework helps reduce regression risks, improve release confidence, and ensure a seamless user experience.
+* QA Best Practices
 
 ---
 
@@ -140,4 +123,4 @@ Adeoye Phillip
 
 QA Automation Engineer
 
-This project demonstrates my ability to automate complex business workflows, implement scalable automation frameworks, and apply industry-standard quality engineering practices.
+This project demonstrates my ability to design maintainable UI automation frameworks and implement reliable automated tests for critical user workflows.
